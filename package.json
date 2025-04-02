@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Nadezhda18/qa-auto-engineer-javascript-project-44#readme",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "readline-sync": "^1.4.10"
   }
 }
