@@ -9,3 +9,6 @@ publish:
 
 make lint:
 	npx eslint . 
+
+brain-even: игра
+	node bin/brain-even.js
