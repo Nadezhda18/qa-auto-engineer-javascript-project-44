@@ -4,7 +4,7 @@ import userName from '../scr/cli.js';
 
 userName();
 
-const brainEven = () => {
+const brainEven = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let numberOfCorrectAnsf = 0;
   while (numberOfCorrectAnsf !== 3) {
