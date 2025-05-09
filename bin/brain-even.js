@@ -11,7 +11,7 @@ let numberOfCorrectAnsf = 0;
 const brainEven = () => {
   while (numberOfCorrectAnsf !== 3) {
     const a = Math.floor((Math.random() * 100));
-    console.log(`Question: ${a} `);
+    console.log(`\nQuestion: ${a} `);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== 'no' && answer !== 'yes') {
       console.log(`${answer} is wrong answer ;(.\nLet's try again, ${name}!`);
