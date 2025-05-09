@@ -6,12 +6,13 @@ console.log('Welcome to the Brain Games!');
 const name = readlineSync.question('May I have your name? ');
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
+let numberOfCorrectAnsf = 0;
 
 const brainEven = () => {
   const a = Math.floor((Math.random() * 10));
   const number = readlineSync.question(`Question: ${a} `);
   const answer = readlineSync.question('Your answer: ');
-  for (let numberOfCorrectAnsf = 0; numberOfCorrectAnsf < 4; numberOfCorrectAnsf += 1) {
+  while (numberOfCorrectAnsf < 4) {
     if (number % 2 !== 0 && answer === 'no') {
       numberOfCorrectAnsf += 1;
       return console.log('Correct!');
