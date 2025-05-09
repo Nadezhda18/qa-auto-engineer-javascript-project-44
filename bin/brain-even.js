@@ -2,13 +2,14 @@
 import readlineSync from 'readline-sync';
 import userName from '../scr/cli.js';
 
-const name = userName();
+console.log('Welcome to the Brain Games!');
+const name = readlineSync.question('May I have your name? ');
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 
 const brainEven = () => {
   const a = Math.floor((Math.random() * 10));
-  const number = readlineSync.question(`Question: ${a}`);
+  const number = readlineSync.question(`Question: ${a} `);
   const answer = readlineSync.question('Your answer: ');
   for (let numberOfCorrectAnsf = 0; numberOfCorrectAnsf < 4; numberOfCorrectAnsf += 1) {
     if (number % 2 !== 0 && answer === 'no') {
@@ -22,10 +23,9 @@ const brainEven = () => {
     } if (number % 2 === 0 && answer === 'no') {
       return console.log(`'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${name}!`);
     }
-  }
+  } return numberOfCorrectAnsf;
 };
 export default brainEven;
 
 brainEven();
-
 
