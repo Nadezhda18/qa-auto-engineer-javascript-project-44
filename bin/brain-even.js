@@ -13,7 +13,7 @@ const brainEven = () => {
     const a = Math.floor((Math.random() * 100));
     console.log(`Question: ${a} `);
     const answer = readlineSync.question('Your answer: ');
-    if (answer !== 'no' || answer !== 'yes') {
+    if (answer !== 'no' && answer !== 'yes') {
       console.log(`${answer} is wrong answer ;(.\nLet's try again, ${name}!`);
     }
     if (a % 2 !== 0 && answer === 'no') {
