@@ -2,13 +2,11 @@
 import readlineSync from 'readline-sync';
 import userName from '../scr/cli.js';
 
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name? ');
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-let numberOfCorrectAnsf = 0;
+userName();
 
 const brainEven = () => {
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  let numberOfCorrectAnsf = 0;
   while (numberOfCorrectAnsf !== 3) {
     const a = Math.floor((Math.random() * 100));
     console.log(`\nQuestion: ${a} `);
