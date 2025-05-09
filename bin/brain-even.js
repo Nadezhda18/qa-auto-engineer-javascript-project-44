@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import userName from '../scr/cli';
+import userName from '../scr/cli.js';
 
 const name = userName();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
