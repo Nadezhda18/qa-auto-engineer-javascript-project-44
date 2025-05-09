@@ -12,7 +12,7 @@ const brainEven = () => {
   const a = Math.floor((Math.random() * 10));
   console.log(`Question: ${a} `);
   const answer = readlineSync.question('Your answer: ');
-  while (numberOfCorrectAnsf < 4) {
+  while (numberOfCorrectAnsf !== 3) {
     if (a % 2 !== 0 && answer === 'no') {
       console.log('Correct!');
       numberOfCorrectAnsf += 1;
