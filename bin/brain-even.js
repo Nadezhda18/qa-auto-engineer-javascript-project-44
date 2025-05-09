@@ -5,6 +5,7 @@ import userName from '../scr/cli.js';
 const name = userName();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
+
 const brainEven = () => {
   const a = Math.random();
   const number = readlineSync.question(`Question: ${a}`);
@@ -24,3 +25,7 @@ const brainEven = () => {
   }
 };
 export default brainEven;
+
+brainEven();
+
+
