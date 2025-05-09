@@ -13,6 +13,9 @@ const brainEven = () => {
     const a = Math.floor((Math.random() * 100));
     console.log(`Question: ${a} `);
     const answer = readlineSync.question('Your answer: ');
+    if (answer !== 'no' || answer !== 'yes') {
+      return undefined;
+    }
     if (a % 2 !== 0 && answer === 'no') {
       console.log('Correct!');
       numberOfCorrectAnsf += 1;
