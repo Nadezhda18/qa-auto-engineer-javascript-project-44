@@ -3,8 +3,9 @@ import readlineSync from 'readline-sync';
 import userName from '../scr/cli.js';
 
 userName();
+let name;
 
-const brainEven = (name) => {
+const brainEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let numberOfCorrectAnsf = 0;
   while (numberOfCorrectAnsf !== 3) {
