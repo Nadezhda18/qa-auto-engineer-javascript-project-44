@@ -14,7 +14,7 @@ const brainEven = () => {
     console.log(`\nQuestion: ${a} `);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== 'no' && answer !== 'yes') {
-      console.log(`${answer} is wrong answer ;(.\nLet's try again, ${name}!`);
+      console.log(`${answer} is wrong answer ;(. Your answer can only be 'yes' or 'no'.\nLet's try again, ${name}!`);
     }
     if (a % 2 !== 0 && answer === 'no') {
       console.log('Correct!');
