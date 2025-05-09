@@ -27,6 +27,5 @@ const brainEven = (name) => {
 };
 export default brainEven;
 
-userName();
-brainEven();
+brainEven(userName());
 
