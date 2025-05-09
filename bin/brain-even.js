@@ -10,7 +10,7 @@ let numberOfCorrectAnsf = 0;
 
 const brainEven = () => {
   const a = Math.floor((Math.random() * 10));
-  readlineSync.question(`Question: ${a} `);
+  console.log(`Question: ${a} `);
   const answer = readlineSync.question('Your answer: ');
   while (numberOfCorrectAnsf < 4) {
     if (a % 2 !== 0 && answer === 'no') {
@@ -24,7 +24,7 @@ const brainEven = () => {
     } if (a % 2 === 0 && answer === 'no') {
       console.log(`'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${name}!`);
     }
-  } return numberOfCorrectAnsf;
+  } return console.log(`Congratulations, ${name}!`);
 };
 export default brainEven;
 
