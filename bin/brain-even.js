@@ -2,10 +2,7 @@
 import readlineSync from 'readline-sync';
 import userName from '../scr/cli.js';
 
-userName();
-let name;
-
-const brainEven = () => {
+const brainEven = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let numberOfCorrectAnsf = 0;
   while (numberOfCorrectAnsf !== 3) {
@@ -30,5 +27,6 @@ const brainEven = () => {
 };
 export default brainEven;
 
+userName();
 brainEven();
 
