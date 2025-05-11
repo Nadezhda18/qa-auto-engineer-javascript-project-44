@@ -7,7 +7,6 @@ const getRandomNumber = (max, min) => {
   return b;
 };
 
-
 const brainEven = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let numberOfCorrectAnsf = 0;
@@ -34,4 +33,3 @@ const brainEven = (name) => {
 export default brainEven;
 
 brainEven(userName());
-
