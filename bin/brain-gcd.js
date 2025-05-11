@@ -30,7 +30,10 @@ const brainGcd = (name) => {
     if (answer === correctAnswer) {
       console.log('Correct!');
       numberOfCorrectAnsf += 1;
-    } else (console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`));
+    }
+    if (answer !== correctAnswer) {
+      (console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`));
+    }
   } return console.log(`Congratulations, ${name}!`);
 };
 
