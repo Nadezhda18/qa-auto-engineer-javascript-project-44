@@ -24,11 +24,11 @@ const brainCalc = (name) => {
     const symbol = getRandomSym(symbols);
     console.log(`\nQuestion: ${number1} ${symbol} ${number2}`);
     const answer = readlineSync.question('Your answer: ');
-    if (answer === `${number1} ${symbol} ${number2}`) {
+    if (answer === Number(`${number1} ${symbol} ${number2}`)) {
       console.log('Correct!');
       numberOfCorrectAnsf += 1;
     }
-    if (answer !== `${number1} ${symbol} ${number2}`) {
+    if (answer !== Number(`${number1} ${symbol} ${number2}`)) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${number1} ${symbol} ${number2}.\nLet's try again, ${name}!`);
     }
   } return console.log(`Congratulations, ${name}!`);
