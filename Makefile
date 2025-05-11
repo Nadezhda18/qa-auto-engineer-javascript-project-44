@@ -15,3 +15,6 @@ brain-even: игра
 
 brain-calc: игра
 	node bin/brain-calc.js
+
+brain-gcd: игра
+	node bin/brain-gcd.js
