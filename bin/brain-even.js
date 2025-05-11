@@ -12,7 +12,7 @@ const brainEven = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let numberOfCorrectAnsf = 0;
   while (numberOfCorrectAnsf !== 3) {
-    const a = getRandomNumber(0, Infinity);
+    const a = getRandomNumber(0, 100);
     console.log(`\nQuestion: ${a} `);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== 'no' && answer !== 'yes') {
