@@ -2,7 +2,7 @@
 import readlineSync from 'readline-sync';
 import userName from '../scr/cli.js';
 
-const getRandomNumber = (max, min) => {
+const getRandomNumber = (min, max) => {
   const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
   return randomNumber;
 };
@@ -11,8 +11,6 @@ const getRandomSym = (elements) => {
   const randomSymbol = elements[Math.floor(Math.random() * elements.length)];
   return randomSymbol;
 };
-
-
 
 const brainCalc = (name) => {
   const symbols = ['+', '-', '*'];
