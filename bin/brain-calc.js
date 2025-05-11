@@ -24,15 +24,29 @@ const brainCalc = (name) => {
     const symbol = getRandomSym(symbols);
     console.log(`\nQuestion: ${number1} ${symbol} ${number2}`);
     const answer = readlineSync.question('Your answer: ');
-    if (answer === Number(`${number1} ${symbol} ${number2}`)) {
+    let correctAnswer;
+    switch (symbol) {
+      case '+':
+        correctAnswer = number1 + number2;
+        break;
+      case '-':
+        correctAnswer = number1 - number2;
+        break;
+      case '*':
+        correctAnswer = number1 * number2;
+        break;
+      default:
+        correctAnswer = NaN;
+    }
+
+    if (Number(answer) === correctAnswer) {
       console.log('Correct!');
       numberOfCorrectAnsf += 1;
+    } else {
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`);
     }
-    if (answer !== Number(`${number1} ${symbol} ${number2}`)) {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${number1} ${symbol} ${number2}.\nLet's try again, ${name}!`);
-    }
-  } return console.log(`Congratulations, ${name}!`);
-
+  }
+  return console.log(`Congratulations, ${name}!`);
 };
 
 export default brainCalc;
