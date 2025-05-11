@@ -12,3 +12,6 @@ make lint:
 
 brain-even: игра
 	node bin/brain-even.js
+
+brain-calc: игра
+	node bin/brain-calc.js
