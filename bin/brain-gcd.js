@@ -10,7 +10,7 @@ const getMaxDivider = (a, b) => {
     if (result1 === 0 && result2 === 0) {
       dividers.push(i);
     }
-  } return dividers.at(-1);
+  } return Number(dividers.at(-1));
 };
 
 const getRandomNumber = (min, max) => {
