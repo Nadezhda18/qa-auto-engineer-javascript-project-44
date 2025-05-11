@@ -12,19 +12,29 @@ const getRandomSym = (elements) => {
   return randomSymbol;
 };
 
-const symbols = ['+', '-', '*'];
+
 
 const brainCalc = (name) => {
-  const 
+  const symbols = ['+', '-', '*'];
   console.log('What is the result of the expression?');
   let numberOfCorrectAnsf = 0;
   while (numberOfCorrectAnsf !== 3) {
-    const number = getRandomNumber(0, 100);
+    const number1 = getRandomNumber(0, 100);
+    const number2 = getRandomNumber(0, 100);
     const symbol = getRandomSym(symbols);
-    console.log(`\nQuestion: ${number} ${symbol} ${number}`);
+    console.log(`\nQuestion: ${number1} ${symbol} ${number2}`);
     const answer = readlineSync.question('Your answer: ');
-  }
+    if (answer === `${number1} ${symbol} ${number2}`) {
+      console.log('Correct!');
+      numberOfCorrectAnsf += 1;
+    }
+    if (answer !== `${number1} ${symbol} ${number2}`) {
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${number1} ${symbol} ${number2}.\nLet's try again, ${name}!`);
+    }
+  } return console.log(`Congratulations, ${name}!`);
 
 };
 
 export default brainCalc;
+
+brainCalc(userName());
