@@ -2,11 +2,17 @@
 import readlineSync from 'readline-sync';
 import userName from '../scr/cli.js';
 
+const getRandomNumber = (max, min) => {
+  const b = Math.floor(Math.random() * (max - min + 1)) + min;
+  return b;
+};
+
+
 const brainEven = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let numberOfCorrectAnsf = 0;
   while (numberOfCorrectAnsf !== 3) {
-    const a = Math.floor((Math.random() * 100));
+    const a = getRandomNumber(0, Infinity);
     console.log(`\nQuestion: ${a} `);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== 'no' && answer !== 'yes') {
