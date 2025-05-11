@@ -22,8 +22,8 @@ const brainGcd = (name) => {
   console.log('Find the greatest common divisor of given numbers.');
   let numberOfCorrectAnsf = 0;
   while (numberOfCorrectAnsf !== 3) {
-    const number1 = getRandomNumber(0, 1000);
-    const number2 = getRandomNumber(0, 1000);
+    const number1 = getRandomNumber(0, 100);
+    const number2 = getRandomNumber(0, 100);
     const correctAnswer = getMaxDivider(number1, number2);
     console.log(`\nQuestion: ${number1} ${number2}`);
     const answer = readlineSync.question('Your answer: ');
