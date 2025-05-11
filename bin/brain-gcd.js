@@ -27,12 +27,12 @@ const brainGcd = (name) => {
     const correctAnswer = getMaxDivider(number1, number2);
     console.log(`\nQuestion: ${number1} ${number2}`);
     const answer = readlineSync.question('Your answer: ');
-    const answerNumber = Number(answer);
-    if (answerNumber === correctAnswer) {
+    const answerAsNumber = Number(answer);
+    if (answerAsNumber === correctAnswer) {
       console.log('Correct!');
       numberOfCorrectAnsf += 1;
     }
-    if (answerNumber !== correctAnswer) {
+    if (answerAsNumber !== correctAnswer) {
       (console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`));
     }
   } return console.log(`Congratulations, ${name}!`);
