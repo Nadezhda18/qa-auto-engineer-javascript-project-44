@@ -13,8 +13,9 @@ const progression = (name) => {
   while (numberOfCorrectAnsf !== 3) {
     const seriesOfNumbers = [];
     const diffOfProgr = getRandomNumber(1, 10);
+    const firstNumber = getRandomNumber(0, 70);
     for (let i = 0; i <= getRandomNumber(5, 11); i += 1) {
-      seriesOfNumbers[i] = getRandomNumber(0, 100) + diffOfProgr;
+      seriesOfNumbers[i] = firstNumber + (i - 1) * diffOfProgr;
     }
     const hiddenNumber = getRandomNumber(0, progression.lenght);
     const correctAnswer = seriesOfNumbers[hiddenNumber];
