@@ -17,7 +17,7 @@ const progression = (name) => {
     for (let i = 0; i <= getRandomNumber(5, 11); i += 1) {
       seriesOfNumbers[i] = firstNumber + (i - 1) * diffOfProgr;
     }
-    const hiddenNumber = getRandomNumber(0, progression.lenght);
+    const hiddenNumber = getRandomNumber(0, seriesOfNumbers.lenght);
     const a = Number(hiddenNumber);
     const correctAnswer = Number(seriesOfNumbers[a]);
     seriesOfNumbers[a] = 'boo';
