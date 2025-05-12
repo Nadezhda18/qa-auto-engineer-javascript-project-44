@@ -12,8 +12,8 @@ const isPrime = (name) => {
   let numberOfCorrectAnsf = 0;
   while (numberOfCorrectAnsf !== 3) {
     const dividers = [];
-    const number = getRandomNumber(2, 100);
-    for (let i = 1; i <= 100; i += 1) {
+    const number = getRandomNumber(2, 10);
+    for (let i = 1; i <= 10; i += 1) {
       if (number % i === 0) {
         dividers.push(i);
       }
