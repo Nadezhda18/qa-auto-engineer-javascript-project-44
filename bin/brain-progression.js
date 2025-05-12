@@ -19,8 +19,8 @@ const progression = (name) => {
     }
     const hiddenNumber = getRandomNumber(0, progression.lenght);
     const a = Number(hiddenNumber);
-    const correctAnswer = seriesOfNumbers[a];
-    seriesOfNumbers[a] = '..';
+    const correctAnswer = Number(seriesOfNumbers[a]);
+    seriesOfNumbers[a] = 'boo';
     console.log(`\nQuestion: ${seriesOfNumbers}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === correctAnswer) {
