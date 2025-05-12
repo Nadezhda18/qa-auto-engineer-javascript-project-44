@@ -20,7 +20,7 @@ const progression = (name) => {
     const hiddenNumber = getRandomNumber(0, seriesOfNumbers.length + 1);
     const correctAnswer = Number(seriesOfNumbers[hiddenNumber]);
     seriesOfNumbers[hiddenNumber] = '..';
-    console.log(`\nQuestion: ${seriesOfNumbers.join()}`);
+    console.log(`\nQuestion: ${seriesOfNumbers.join(' ')}`);
     const answer = Number(readlineSync.question('Your answer: '));
     if (answer === correctAnswer) {
       console.log('Correct!');
