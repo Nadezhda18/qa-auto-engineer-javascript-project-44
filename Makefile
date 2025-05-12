@@ -18,3 +18,6 @@ brain-calc: игра
 
 brain-gcd: игра
 	node bin/brain-gcd.js
+
+brain-progression: игра
+	node bin/brain-progression.js
