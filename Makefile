@@ -21,3 +21,6 @@ brain-gcd: игра
 
 brain-progression: игра
 	node bin/brain-progression.js
+
+brain-prime: игра
+	node bin/brain-prime.js
