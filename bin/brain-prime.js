@@ -38,3 +38,5 @@ const isPrime = (name) => {
 };
 
 export default isPrime;
+
+isPrime(userName());
