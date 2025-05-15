@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import userName from '../src/cli.js';
-import { isPrime } from '../src/index.js';
+import userName from '../src/cli.js'
+import { isPrime } from '../src/index.js'
 
-isPrime(userName());
+isPrime(userName())
