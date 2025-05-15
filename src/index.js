@@ -79,9 +79,10 @@ const brainCalc = (name) => {
       numberOfCorrectAnsf += 1;
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`);
+      return;
     }
   }
-  return console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 };
 export { brainCalc };
 
