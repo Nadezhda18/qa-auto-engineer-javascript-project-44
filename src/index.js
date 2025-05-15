@@ -48,7 +48,8 @@ const brainEven = (name) => {
       console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`)
       return
     }
-  } console.log(`Congratulations, ${name}!`)
+  }
+  console.log(`Congratulations, ${name}!`)
 }
 export { brainEven }
 
@@ -108,7 +109,8 @@ const brainGcd = (name) => {
       (console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`))
       return
     }
-  } console.log(`Congratulations, ${name}!`)
+  }
+  console.log(`Congratulations, ${name}!`)
 }
 export { brainGcd }
 
@@ -126,7 +128,8 @@ const isPrime = (name) => {
     let correctAnswer = ''
     if (dividers.length === 2 && dividers[0] === 1 && dividers[1] === number) {
       correctAnswer = 'yes'
-    } else {
+    }
+    else {
       correctAnswer = 'no'
     }
 
@@ -140,7 +143,8 @@ const isPrime = (name) => {
       (console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`))
       return
     }
-  } console.log(`Congratulations, ${name}!`)
+  }
+  console.log(`Congratulations, ${name}!`)
 }
 export { isPrime }
 
@@ -167,6 +171,7 @@ const progression = (name) => {
       (console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`))
       return
     }
-  } console.log(`Congratulations, ${name}!`)
+  }
+  console.log(`Congratulations, ${name}!`)
 }
 export { progression }
