@@ -1,28 +1,29 @@
-import readlineSync from 'readline-sync';
+import readlineSync from 'readline-sync'
 
 const getRandomNumber = (max, min) => {
-  const b = Math.floor(Math.random() * (max - min + 1)) + min;
-  return b;
-};
-export { getRandomNumber };
+  const b = Math.floor(Math.random() * (max - min + 1)) + min
+  return b
+}
+export { getRandomNumber }
 
 const getRandomSym = (elements) => {
-  const randomSymbol = elements[Math.floor(Math.random() * elements.length)];
-  return randomSymbol;
-};
-export { getRandomSym };
+  const randomSymbol = elements[Math.floor(Math.random() * elements.length)]
+  return randomSymbol
+}
+export { getRandomSym }
 
 const getMaxDivider = (a, b) => {
-  const dividers = [];
+  const dividers = []
   for (let i = 1; i <= Math.min(a, b); i += 1) {
-    const result1 = a % i;
-    const result2 = b % i;
+    const result1 = a % i
+    const result2 = b % i
     if (result1 === 0 && result2 === 0) {
-      dividers.push(i);
+      dividers.push(i)
     }
-  } return Number(dividers.at(-1));
-};
-export { getMaxDivider };
+  }
+  return Number(dividers.at(-1))
+}
+export { getMaxDivider }
 
 const brainEven = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
