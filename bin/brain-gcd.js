@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import userName from '../scr/cli.js';
+import userName from '../src/cli.js';
 
 const getMaxDivider = (a, b) => {
   const dividers = [];

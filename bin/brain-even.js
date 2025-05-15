@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import userName from '../scr/cli.js';
+import userName from '../src/cli.js';
 
 const getRandomNumber = (max, min) => {
   const b = Math.floor(Math.random() * (max - min + 1)) + min;
