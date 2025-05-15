@@ -38,15 +38,14 @@ const brainEven = (name) => {
     if (a % 2 !== 0 && answer === 'no') {
       console.log('Correct!');
       numberOfCorrectAnsf += 1;
-    } if (a % 2 !== 0 && answer === 'yes') {
-      console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
     } if (a % 2 === 0 && answer === 'yes') {
       console.log('Correct!');
       numberOfCorrectAnsf += 1;
-    } if (a % 2 === 0 && answer === 'no') {
-      console.log(`'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${name}!`);
+    } if ((a % 2 !== 0 && answer === 'yes') || (a % 2 === 0 && answer === 'no')) {
+      console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
+      return;
     }
-  } return console.log(`Congratulations, ${name}!`);
+  } console.log(`Congratulations, ${name}!`);
 };
 export { brainEven };
 
