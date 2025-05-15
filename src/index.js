@@ -47,7 +47,7 @@ const brainEven = (name) => {
     }
   } return console.log(`Congratulations, ${name}!`);
 };
-export default brainEven;
+export { brainEven };
 
 const brainCalc = (name) => {
   const symbols = ['+', '-', '*'];
