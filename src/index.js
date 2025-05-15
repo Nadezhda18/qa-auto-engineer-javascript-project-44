@@ -102,8 +102,9 @@ const brainGcd = (name) => {
     }
     if (answerAsNumber !== correctAnswer) {
       (console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`));
+      return;
     }
-  } return console.log(`Congratulations, ${name}!`);
+  } console.log(`Congratulations, ${name}!`);
 };
 export { brainGcd };
 
@@ -133,8 +134,9 @@ const isPrime = (name) => {
     }
     if (answer !== correctAnswer) {
       (console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`));
+      return;
     }
-  } return console.log(`Congratulations, ${name}!`);
+  } console.log(`Congratulations, ${name}!`);
 };
 export { isPrime };
 
@@ -159,7 +161,8 @@ const progression = (name) => {
     }
     if (answer !== correctAnswer) {
       (console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`));
+      return;
     }
-  } return console.log(`Congratulations, ${name}!`);
+  } console.log(`Congratulations, ${name}!`);
 };
 export { progression };
