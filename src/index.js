@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync'
 import userName from './cli.js'
 
-const gamesStructureForNumb = (questionOfGame, gameProcess) => {
+const gamesStructureForNumb = (questionOfGame, gameProcess) => { // для числовых ответов
   const name = userName()
   console.log(questionOfGame)
   let numberOfCorrectAnsf = 0
@@ -26,7 +26,7 @@ const gamesStructureForNumb = (questionOfGame, gameProcess) => {
 
 export { gamesStructureForNumb }
 
-const gamesStructureForStr = (questionOfGame, gameProcess) => {
+const gamesStructureForStr = (questionOfGame, gameProcess) => { // для строчных ответов
   const name = userName()
   console.log(questionOfGame)
   let numberOfCorrectAnsf = 0

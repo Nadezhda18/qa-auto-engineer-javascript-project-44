@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import userName from '../src/cli.js'
-import { brainGcd } from '../src/index.js'
+import { brainGcd } from '../games/brain-gcd_game.js'
 
-brainGcd(userName())
+brainGcd()
