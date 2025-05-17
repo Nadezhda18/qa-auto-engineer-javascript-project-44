@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import userName from '../src/cli.js'
-import { progression } from '../src/index.js'
+import brainProgression from '../games/brain-progression_game.js'
 
-progression(userName())
+brainProgression()
