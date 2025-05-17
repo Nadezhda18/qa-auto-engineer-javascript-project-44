@@ -6,8 +6,9 @@ const getRandomNumber = (max, min) => {
 }
 export { getRandomNumber }
 
+const questionOfGame = 'What number is missing in the progression?'
+
 const gameProcess = () => {
-  const questionOfGame = 'What number is missing in the progression?'
   const seriesOfNumbers = []
   const diffOfProgr = getRandomNumber(1, 10)
   const firstNumber = getRandomNumber(0, 70)
@@ -21,7 +22,6 @@ const gameProcess = () => {
   return {
     question,
     correctAnswer,
-    questionOfGame,
   }
 }
 
