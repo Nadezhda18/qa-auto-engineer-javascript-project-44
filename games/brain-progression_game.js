@@ -1,4 +1,4 @@
-import gamesStructure from '../src/index.js'
+import { gamesStructureForNumb } from '../src/index.js'
 
 const getRandomNumber = (max, min) => {
   const b = Math.floor(Math.random() * (max - min + 1)) + min
@@ -26,7 +26,7 @@ const gameProcess = () => {
 }
 
 const brainProgression = () => {
-  gamesStructure(questionOfGame, gameProcess)
+  gamesStructureForNumb(questionOfGame, gameProcess)
 }
 
 export { brainProgression }

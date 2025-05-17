@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync'
 import userName from './cli.js'
 
-const gamesStructure = (questionOfGame, gameProcess) => {
+const gamesStructureForNumb = (questionOfGame, gameProcess) => {
   const name = userName()
   console.log(questionOfGame)
   let numberOfCorrectAnsf = 0
@@ -24,4 +24,29 @@ const gamesStructure = (questionOfGame, gameProcess) => {
   console.log(`Congratulations, ${name}!`)
 }
 
-export default gamesStructure
+export { gamesStructureForNumb }
+
+const gamesStructureForStr = (questionOfGame, gameProcess) => {
+  const name = userName()
+  console.log(questionOfGame)
+  let numberOfCorrectAnsf = 0
+  while (numberOfCorrectAnsf !== 3) {
+    const { question, correctAnswer } = gameProcess()
+
+    console.log(`Question: ${question}`)
+    const answer = readlineSync.question('Your answer: ')
+
+    if (answer === correctAnswer) {
+      numberOfCorrectAnsf += 1
+      console.log('Correct!')
+    }
+    else {
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`)
+      return
+    }
+  }
+
+  console.log(`Congratulations, ${name}!`)
+}
+
+export { gamesStructureForStr }

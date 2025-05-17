@@ -1,4 +1,4 @@
-import gamesStructure from '../src/index.js'
+import { gamesStructureForStr } from '../src/index.js'
 
 const getRandomNumber = (max, min) => {
   const b = Math.floor(Math.random() * (max - min + 1)) + min
@@ -32,7 +32,7 @@ const gameProcess = () => {
 }
 
 const isPrime = () => {
-  gamesStructure(questionOfGame, gameProcess)
+  gamesStructureForStr(questionOfGame, gameProcess)
 }
 
 export { isPrime }
