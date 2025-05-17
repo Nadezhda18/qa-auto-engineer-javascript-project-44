@@ -1,6 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Nadezhda18/qa-auto-engineer-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Nadezhda18/qa-auto-engineer-javascript-project-44/actions)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Nadezhda18_qa-auto-engineer-javascript-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Nadezhda18_qa-auto-engineer-javascript-project-44) 
+
 Добро пожаловать в Brain Games (Игры разума)! 
 Данный проект реализует 5 математических игр, которые помогут отвлечься от будничных задач и немного разгрузиться. Вспомните школьную математику и посоревнуйтесь с компьютером до трех побед. 
 
@@ -12,7 +13,7 @@
 5) Игра «Простое ли число» - угадайте, простое ли перед вами число.
 
 Минимальные требования к установке Brain Games:
-ОC Linux
+ОC Linux,
 Node.js v23.10.0
 
 Инструкция по установке пакета Brain Games:
