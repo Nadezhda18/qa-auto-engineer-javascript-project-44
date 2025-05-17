@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import userName from '../src/cli.js'
-import { isPrime } from '../src/index.js'
+import { isPrime } from '../games/brain-prime_game.js'
 
-isPrime(userName())
+isPrime()
