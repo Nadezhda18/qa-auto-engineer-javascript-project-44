@@ -29,4 +29,4 @@ const brainProgression = () => {
   gamesStructure(questionOfGame, gameProcess)
 }
 
-export default brainProgression
+export { brainProgression }
