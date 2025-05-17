@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import userName from '../src/cli.js'
-import { brainCalc } from '../src/index.js'
+import { brainCalc } from '../games/brain-calc_game.js'
 
-brainCalc(userName())
+brainCalc()
