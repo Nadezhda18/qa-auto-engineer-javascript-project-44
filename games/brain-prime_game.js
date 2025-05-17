@@ -1,10 +1,5 @@
 import { gamesStructureForStr } from '../src/index.js'
-
-const getRandomNumber = (max, min) => {
-  const b = Math.floor(Math.random() * (max - min + 1)) + min
-  return b
-}
-export { getRandomNumber }
+import { getRandomNumber } from '../src/index.js'
 
 const questionOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no"'
 

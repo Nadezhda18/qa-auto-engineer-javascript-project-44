@@ -1,10 +1,5 @@
 import { gamesStructureForNumb } from '../src/index.js'
-
-const getRandomNumber = (max, min) => {
-  const b = Math.floor(Math.random() * (max - min + 1)) + min
-  return b
-}
-export { getRandomNumber }
+import { getRandomNumber } from '../src/index.js'
 
 const questionOfGame = 'What number is missing in the progression?'
 
