@@ -1,7 +1,7 @@
 import { gamesStructureForNumb } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
-const getMaxDivider = (a, b) => {
+const getMaxDivider = (a, b) => { // расчет максимального общего делителя
   const dividers = []
   for (let i = 1; i <= Math.min(a, b); i += 1) {
     const result1 = a % i
