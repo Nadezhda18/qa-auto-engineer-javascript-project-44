@@ -6,7 +6,7 @@ const getRandomSym = (elements) => {
     return undefined
   }
   const a = elements.length
-  const randomIndex = getRandomNumber(0, a)
+  const randomIndex = getRandomNumber(-1, a)
   const randomSymbol = elements[randomIndex]
   return randomSymbol
 }
