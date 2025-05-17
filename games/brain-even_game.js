@@ -1,9 +1,5 @@
 import { gamesStructureForStr } from '../src/index.js'
-
-const getRandomNumber = (max, min) => {
-  const b = Math.floor(Math.random() * (max - min + 1)) + min
-  return b
-}
+import { getRandomNumber } from '../src/index.js'
 
 const questionOfGame = 'Answer "yes" if the number is even, otherwise answer "no".'
 
