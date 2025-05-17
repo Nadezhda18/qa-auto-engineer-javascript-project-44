@@ -2,7 +2,6 @@ import readlineSync from 'readline-sync'
 import userName from './cli.js'
 
 const gamesStructure = (questionOfGame, gameProcess) => {
-  userName()
   const name = userName()
   console.log(questionOfGame)
   let numberOfCorrectAnsf = 0
