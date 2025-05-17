@@ -16,7 +16,7 @@ const gameProcess = () => {
     seriesOfNumbers[i] = firstNumber + i * diffOfProgr
   }
   const hiddenNumber = getRandomNumber(0, seriesOfNumbers.length - 1)
-  const correctAnswer = Number(seriesOfNumbers[hiddenNumber])
+  const correctAnswer = seriesOfNumbers[hiddenNumber]
   seriesOfNumbers[hiddenNumber] = '..'
   const question = seriesOfNumbers.join(' ')
   return {

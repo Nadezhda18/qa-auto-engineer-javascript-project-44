@@ -9,7 +9,7 @@ const gamesStructure = (questionOfGame, gameProcess) => {
     const { question, correctAnswer } = gameProcess()
 
     console.log(`Question: ${question}`)
-    const answer = Number(readlineSync.question('Your answer: '))
+    const answer = readlineSync.question('Your answer: ')
 
     if (answer === correctAnswer) {
       numberOfCorrectAnsf += 1
