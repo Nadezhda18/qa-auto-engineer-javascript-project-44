@@ -3,6 +3,7 @@ import userName from './cli.js'
 
 const gamesStructure = (questionOfGame, gameProcess) => {
   userName()
+  const name = userName()
   console.log(questionOfGame)
   let numberOfCorrectAnsf = 0
   while (numberOfCorrectAnsf !== 3) {
@@ -16,12 +17,12 @@ const gamesStructure = (questionOfGame, gameProcess) => {
       console.log('Correct!')
     }
     else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${userName}!`)
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`)
       return
     }
   }
 
-  console.log(`Congratulations, ${userName}!`)
+  console.log(`Congratulations, ${name}!`)
 }
 
 export default gamesStructure
