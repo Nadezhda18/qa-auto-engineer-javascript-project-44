@@ -2,6 +2,9 @@ import { gamesStructureForNumb } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const getRandomSym = (elements) => {
+  if (elements.length === 0 || !Array.isArray(elements)) {
+    return undefined
+  }
   const randomSymbol = elements[Math.floor(Math.random() * elements.length)]
   return randomSymbol
 }
