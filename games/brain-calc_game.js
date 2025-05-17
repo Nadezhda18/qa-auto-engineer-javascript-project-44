@@ -5,7 +5,7 @@ const getRandomSym = (elements) => {
   if (elements.length === 0 || !Array.isArray(elements)) {
     return undefined
   }
-  const a = elements.length - 1;
+  const a = elements.length - 1
   const randomIndex = getRandomNumber(0, a)
   const randomSymbol = elements[randomIndex]
   return randomSymbol
