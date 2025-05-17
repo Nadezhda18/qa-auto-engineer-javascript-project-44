@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync'
-import userName from './cli'
+import userName from './cli.js'
 
 const gamesStructure = (questionOfGame, gameProcess) => {
   userName()
