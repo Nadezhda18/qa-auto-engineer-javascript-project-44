@@ -13,7 +13,7 @@ const createProgression = () => {
 
 const questionOfGame = 'What number is missing in the progression?'
 
-const gameProcess = () => {
+const getTheGame = () => {
   const progression = createProgression()
   const hiddenNumber = getRandomNumber(0, progression.length - 1)
   const correctAnswer = String(progression[hiddenNumber])
@@ -26,7 +26,7 @@ const gameProcess = () => {
 }
 
 const findMissingNumber = () => {
-  getThreeCorrectAnswers(questionOfGame, gameProcess)
+  getThreeCorrectAnswers(questionOfGame, getTheGame)
 }
 
 export { findMissingNumber }

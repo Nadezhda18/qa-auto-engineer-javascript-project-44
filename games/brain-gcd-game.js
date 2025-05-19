@@ -15,7 +15,7 @@ const getMaxDivider = (a, b) => { // расчет максимального о�
 
 const questionOfGame = 'Find the greatest common divisor of given numbers.'
 
-const gameProcess = () => {
+const getTheGame = () => {
   const number1 = getRandomNumber(0, 100)
   const number2 = getRandomNumber(0, 100)
   const correctAnswer = String(getMaxDivider(number1, number2))
@@ -27,7 +27,7 @@ const gameProcess = () => {
 }
 
 const findGcd = () => {
-  getThreeCorrectAnswers(questionOfGame, gameProcess)
+  getThreeCorrectAnswers(questionOfGame, getTheGame)
 }
 
 export { findGcd }

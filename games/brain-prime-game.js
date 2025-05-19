@@ -13,7 +13,7 @@ const findDividers = (number) => { // функция для поиска дел�
 
 const questionOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no"'
 
-const gameProcess = () => {
+const getTheGame = () => {
   const number = getRandomNumber(1, 100)
   const dividers = findDividers(number)
   let correctAnswer = ''
@@ -32,7 +32,7 @@ const gameProcess = () => {
 }
 
 const findPrimeNumber = () => {
-  getThreeCorrectAnswers(questionOfGame, gameProcess)
+  getThreeCorrectAnswers(questionOfGame, getTheGame)
 }
 
 export { findPrimeNumber }

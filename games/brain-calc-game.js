@@ -12,7 +12,7 @@ const getRandomSym = (elements) => {
 
 const questionOfGame = 'What is the result of the expression?'
 
-const gameProcess = () => {
+const getTheGame = () => {
   const symbols = ['+', '-', '*']
   const number1 = getRandomNumber(0, 100)
   const number2 = getRandomNumber(0, 100)
@@ -39,7 +39,7 @@ const gameProcess = () => {
 }
 
 const calculateExpression = () => {
-  getThreeCorrectAnswers(questionOfGame, gameProcess)
+  getThreeCorrectAnswers(questionOfGame, getTheGame)
 }
 
 export { calculateExpression }

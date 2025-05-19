@@ -8,12 +8,12 @@ const getRandomNumber = (max, min) => {
 
 export { getRandomNumber }
 
-const getThreeCorrectAnswers = (questionOfGame, gameProcess) => { // для строчных ответов
+const getThreeCorrectAnswers = (questionOfGame, getTheGame) => {
   const name = userName()
   console.log(questionOfGame)
   const correctAnswersCount = 3
   for (let i = 1; i <= correctAnswersCount; i += 1) {
-    const { question, correctAnswer } = gameProcess()
+    const { question, correctAnswer } = getTheGame()
 
     console.log(`Question: ${question}`)
     const answer = readlineSync.question('Your answer: ')

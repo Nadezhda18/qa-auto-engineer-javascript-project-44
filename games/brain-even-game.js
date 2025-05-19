@@ -5,7 +5,7 @@ const defineEven = number => number % 2 === 0 // определение четн
 
 const questionOfGame = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-const gameProcess = () => {
+const getTheGame = () => {
   const number = getRandomNumber(0, 100)
   const question = number
   const correctAnswer = defineEven(number) ? 'yes' : 'no'
@@ -16,7 +16,7 @@ const gameProcess = () => {
 }
 
 const findEvenNumber = () => {
-  getThreeCorrectAnswers(questionOfGame, gameProcess)
+  getThreeCorrectAnswers(questionOfGame, getTheGame)
 }
 
 export { findEvenNumber }
