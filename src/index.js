@@ -37,7 +37,7 @@ const gamesStructureForStr = (questionOfGame, gameProcess) => { // для стр
   const name = userName()
   console.log(questionOfGame)
   const correctAnswersCount = 3
-  for (let i = 0; i <= correctAnswersCount; i += 1) {
+  for (let i = 1; i <= correctAnswersCount; i += 1) {
     const { question, correctAnswer } = gameProcess()
 
     console.log(`Question: ${question}`)
