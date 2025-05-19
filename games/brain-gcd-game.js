@@ -1,4 +1,4 @@
-import { gamesStructureForNumb } from '../src/index.js'
+import { gamesStructureForStr } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const getMaxDivider = (a, b) => { // расчет максимального общего делителя
@@ -18,7 +18,7 @@ const questionOfGame = 'Find the greatest common divisor of given numbers.'
 const gameProcess = () => {
   const number1 = getRandomNumber(0, 100)
   const number2 = getRandomNumber(0, 100)
-  const correctAnswer = getMaxDivider(number1, number2)
+  const correctAnswer = String(getMaxDivider(number1, number2))
   const question = `${number1} ${number2}`
   return {
     question,
@@ -27,7 +27,7 @@ const gameProcess = () => {
 }
 
 const findGcd = () => {
-  gamesStructureForNumb(questionOfGame, gameProcess)
+  gamesStructureForStr(questionOfGame, gameProcess)
 }
 
 export { findGcd }
