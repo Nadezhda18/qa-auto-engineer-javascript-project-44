@@ -1,4 +1,4 @@
-import { gamesStructure } from '../src/index.js'
+import { getThreeCorrectAnswers } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const defineEven = number => number % 2 === 0 // определение четности числа
@@ -16,7 +16,7 @@ const gameProcess = () => {
 }
 
 const findEvenNumber = () => {
-  gamesStructure(questionOfGame, gameProcess)
+  getThreeCorrectAnswers(questionOfGame, gameProcess)
 }
 
 export { findEvenNumber }

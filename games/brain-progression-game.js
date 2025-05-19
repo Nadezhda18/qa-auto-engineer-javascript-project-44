@@ -1,4 +1,4 @@
-import { gamesStructure } from '../src/index.js'
+import { getThreeCorrectAnswers } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const createProgression = () => {
@@ -26,7 +26,7 @@ const gameProcess = () => {
 }
 
 const findMissingNumber = () => {
-  gamesStructure(questionOfGame, gameProcess)
+  getThreeCorrectAnswers(questionOfGame, gameProcess)
 }
 
 export { findMissingNumber }

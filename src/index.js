@@ -8,7 +8,7 @@ const getRandomNumber = (max, min) => {
 
 export { getRandomNumber }
 
-const gamesStructure = (questionOfGame, gameProcess) => { // для строчных ответов
+const getThreeCorrectAnswers = (questionOfGame, gameProcess) => { // для строчных ответов
   const name = userName()
   console.log(questionOfGame)
   const correctAnswersCount = 3
@@ -30,4 +30,4 @@ const gamesStructure = (questionOfGame, gameProcess) => { // для строчн
   console.log(`Congratulations, ${name}!`)
 }
 
-export { gamesStructure }
+export { getThreeCorrectAnswers }

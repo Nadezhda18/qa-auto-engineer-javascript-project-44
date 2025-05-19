@@ -1,4 +1,4 @@
-import { gamesStructure } from '../src/index.js'
+import { getThreeCorrectAnswers } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const findDividers = (number) => { // функция для поиска делителей определенного числа
@@ -32,7 +32,7 @@ const gameProcess = () => {
 }
 
 const findPrimeNumber = () => {
-  gamesStructure(questionOfGame, gameProcess)
+  getThreeCorrectAnswers(questionOfGame, gameProcess)
 }
 
 export { findPrimeNumber }
