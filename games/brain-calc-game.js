@@ -1,4 +1,4 @@
-import { gamesStructureForStr } from '../src/index.js'
+import { gamesStructure } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const getRandomSym = (elements) => {
@@ -39,7 +39,7 @@ const gameProcess = () => {
 }
 
 const calculateExpression = () => {
-  gamesStructureForStr(questionOfGame, gameProcess)
+  gamesStructure(questionOfGame, gameProcess)
 }
 
 export { calculateExpression }

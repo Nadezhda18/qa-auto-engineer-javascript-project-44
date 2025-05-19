@@ -8,32 +8,7 @@ const getRandomNumber = (max, min) => {
 
 export { getRandomNumber }
 
-const gamesStructureForNumb = (questionOfGame, gameProcess) => { // для числовых ответов
-  const name = userName()
-  console.log(questionOfGame)
-  let numberOfCorrectAnsf = 0
-  while (numberOfCorrectAnsf !== 3) {
-    const { question, correctAnswer } = gameProcess()
-
-    console.log(`Question: ${question}`)
-    const answer = Number(readlineSync.question('Your answer: '))
-
-    if (answer === correctAnswer) {
-      numberOfCorrectAnsf += 1
-      console.log('Correct!')
-    }
-    else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`)
-      return
-    }
-  }
-
-  console.log(`Congratulations, ${name}!`)
-}
-
-export { gamesStructureForNumb }
-
-const gamesStructureForStr = (questionOfGame, gameProcess) => { // для строчных ответов
+const gamesStructure = (questionOfGame, gameProcess) => { // для строчных ответов
   const name = userName()
   console.log(questionOfGame)
   const correctAnswersCount = 3
@@ -47,7 +22,7 @@ const gamesStructureForStr = (questionOfGame, gameProcess) => { // для стр
       console.log('Correct!')
     }
     else {
-      console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${name}!`)
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`)
       return
     }
   }
@@ -55,4 +30,4 @@ const gamesStructureForStr = (questionOfGame, gameProcess) => { // для стр
   console.log(`Congratulations, ${name}!`)
 }
 
-export { gamesStructureForStr }
+export { gamesStructure }

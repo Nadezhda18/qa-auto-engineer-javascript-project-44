@@ -1,4 +1,4 @@
-import { gamesStructureForStr } from '../src/index.js'
+import { gamesStructure } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const questionOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no"'
@@ -27,7 +27,7 @@ const gameProcess = () => {
 }
 
 const findPrimeNumber = () => {
-  gamesStructureForStr(questionOfGame, gameProcess)
+  gamesStructure(questionOfGame, gameProcess)
 }
 
 export { findPrimeNumber }

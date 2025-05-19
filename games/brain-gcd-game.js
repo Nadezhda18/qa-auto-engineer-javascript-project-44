@@ -1,4 +1,4 @@
-import { gamesStructureForStr } from '../src/index.js'
+import { gamesStructure } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const getMaxDivider = (a, b) => { // расчет максимального общего делителя
@@ -27,7 +27,7 @@ const gameProcess = () => {
 }
 
 const findGcd = () => {
-  gamesStructureForStr(questionOfGame, gameProcess)
+  gamesStructure(questionOfGame, gameProcess)
 }
 
 export { findGcd }

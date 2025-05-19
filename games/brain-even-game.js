@@ -1,4 +1,4 @@
-import { gamesStructureForStr } from '../src/index.js'
+import { gamesStructure } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const questionOfGame = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -20,7 +20,7 @@ const gameProcess = () => {
 }
 
 const findEvenNumber = () => {
-  gamesStructureForStr(questionOfGame, gameProcess)
+  gamesStructure(questionOfGame, gameProcess)
 }
 
 export { findEvenNumber }
