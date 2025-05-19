@@ -36,8 +36,8 @@ export { gamesStructureForNumb }
 const gamesStructureForStr = (questionOfGame, gameProcess) => { // для строчных ответов
   const name = userName()
   console.log(questionOfGame)
-  let numberOfCorrectAnsf = 0
-  while (numberOfCorrectAnsf !== 3) {
+  let correctAnswersCount = 3
+  for (let i = 0; i <= correctAnswersCount; i += 1) {
     const { question, correctAnswer } = gameProcess()
 
     console.log(`Question: ${question}`)
