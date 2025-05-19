@@ -1,4 +1,4 @@
-import { gamesStructureForNumb } from '../src/index.js'
+import { gamesStructureForStr } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const getRandomSym = (elements) => {
@@ -21,13 +21,13 @@ const gameProcess = () => {
   let correctAnswer
   switch (symbol) {
     case '+':
-      correctAnswer = number1 + number2
+      correctAnswer = String(number1 + number2)
       break
     case '-':
-      correctAnswer = number1 - number2
+      correctAnswer = String(number1 - number2)
       break
     case '*':
-      correctAnswer = number1 * number2
+      correctAnswer = String(number1 * number2)
       break
     default:
       correctAnswer = NaN
@@ -39,7 +39,7 @@ const gameProcess = () => {
 }
 
 const calculateExpression = () => {
-  gamesStructureForNumb(questionOfGame, gameProcess)
+  gamesStructureForStr(questionOfGame, gameProcess)
 }
 
 export { calculateExpression }
