@@ -44,7 +44,7 @@ const gamesStructureForStr = (questionOfGame, gameProcess) => { // для стр
     const answer = readlineSync.question('Your answer: ')
 
     if (answer === correctAnswer) {
-      numberOfCorrectAnsf += 1
+      correctAnswersCount += 1
       console.log('Correct!')
     }
     else {
