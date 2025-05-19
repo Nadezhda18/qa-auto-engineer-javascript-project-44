@@ -20,8 +20,8 @@ const gameProcess = () => {
   }
 }
 
-const brainProgression = () => {
+const findMissingNumber = () => {
   gamesStructureForNumb(questionOfGame, gameProcess)
 }
 
-export { brainProgression }
+export { findMissingNumber }

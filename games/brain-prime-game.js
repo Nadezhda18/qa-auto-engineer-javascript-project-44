@@ -26,8 +26,8 @@ const gameProcess = () => {
   }
 }
 
-const isPrime = () => {
+const findPrimeNumber = () => {
   gamesStructureForStr(questionOfGame, gameProcess)
 }
 
-export { isPrime }
+export { findPrimeNumber }

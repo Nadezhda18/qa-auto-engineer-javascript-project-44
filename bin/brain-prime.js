@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { isPrime } from '../games/brain-prime_game.js'
+import { findPrimeNumber } from '../games/brain-prime-game.js'
 
-isPrime()
+findPrimeNumber()

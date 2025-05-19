@@ -39,8 +39,8 @@ const gameProcess = () => {
   }
 }
 
-const brainCalc = () => {
+const calculateExpression = () => {
   gamesStructureForNumb(questionOfGame, gameProcess)
 }
 
-export { brainCalc }
+export { calculateExpression }

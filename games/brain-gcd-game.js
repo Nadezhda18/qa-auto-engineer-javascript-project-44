@@ -26,8 +26,8 @@ const gameProcess = () => {
   }
 }
 
-const brainGcd = () => {
+const findGcd = () => {
   gamesStructureForNumb(questionOfGame, gameProcess)
 }
 
-export { brainGcd }
+export { findGcd }

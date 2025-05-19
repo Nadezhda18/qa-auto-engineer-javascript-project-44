@@ -19,8 +19,8 @@ const gameProcess = () => {
   }
 }
 
-const brainEven = () => {
+const findEvenNumber = () => {
   gamesStructureForStr(questionOfGame, gameProcess)
 }
 
-export { brainEven }
+export { findEvenNumber }
