@@ -14,7 +14,7 @@ const findDividers = (number) => { // функция для поиска дел�
 const questionOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no"'
 
 const gameProcess = () => {
-  const number = getRandomNumber(2, 100)
+  const number = getRandomNumber(1, 100)
   const dividers = findDividers(number)
   let correctAnswer = ''
   if (dividers.length === 2 && dividers[0] === 1 && dividers[1] === number) {
