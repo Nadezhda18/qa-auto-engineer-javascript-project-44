@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { findEvenNumber } from '../games/brain-even-game.js'
+import { findEvenNumber } from '../src/games/brain-even-game'
 
 findEvenNumber()
