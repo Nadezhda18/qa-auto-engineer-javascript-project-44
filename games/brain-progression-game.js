@@ -5,7 +5,8 @@ const createProgression = () => {
   const progression = []
   const diffOfProgr = getRandomNumber(1, 10)
   const firstNumber = getRandomNumber(0, 70)
-  for (let i = 0; i < getRandomNumber(5, 11); i += 1) {
+  const progressionLength = getRandomNumber(5, 11)
+  for (let i = 0; i < progressionLength; i += 1) {
     progression[i] = firstNumber + i * diffOfProgr
   }
   return progression

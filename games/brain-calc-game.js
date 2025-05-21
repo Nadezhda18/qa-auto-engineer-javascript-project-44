@@ -1,13 +1,10 @@
 import { getThreeCorrectAnswers } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
-const getRandomSym = (elements) => {
-  if (elements.length === 0 || !Array.isArray(elements)) {
-    return undefined
-  }
-  const randomIndex = getRandomNumber(-1, elements.length)
-  const randomSymbol = elements[randomIndex]
-  return randomSymbol
+const getRandomSign = (signs) => {
+  const randomIndex = getRandomNumber(-1, signs.length)
+  const randomSign = signs[randomIndex]
+  return randomSign
 }
 
 const questionOfGame = 'What is the result of the expression?'
@@ -16,7 +13,7 @@ const getTheGame = () => {
   const symbols = ['+', '-', '*']
   const number1 = getRandomNumber(0, 100)
   const number2 = getRandomNumber(0, 100)
-  const symbol = getRandomSym(symbols)
+  const symbol = getRandomSign(symbols)
   const question = `${number1} ${symbol} ${number2}`
   let correctAnswer
   switch (symbol) {
