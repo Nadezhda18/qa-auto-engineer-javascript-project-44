@@ -1,4 +1,4 @@
-import { getThreeCorrectAnswers } from '../src/index.js'
+import { playGame } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const getGCD = (a, b) => { // расчет максимального общего делителя
@@ -27,7 +27,7 @@ const getTheGame = () => {
 }
 
 const findGcd = () => {
-  getThreeCorrectAnswers(questionOfGame, getTheGame)
+  playGame(questionOfGame, getTheGame)
 }
 
 export { findGcd }

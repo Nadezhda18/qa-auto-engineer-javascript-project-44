@@ -1,4 +1,4 @@
-import { getThreeCorrectAnswers } from '../src/index.js'
+import { playGame } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const isPrime = (number) => {
@@ -32,7 +32,7 @@ const getTheGame = () => {
 }
 
 const findPrimeNumber = () => {
-  getThreeCorrectAnswers(questionOfGame, getTheGame)
+  playGame(questionOfGame, getTheGame)
 }
 
 export { findPrimeNumber }

@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync'
-import userName from './cli.js'
+import getUserName from './cli.js'
 
 const getRandomNumber = (max, min) => {
   const b = Math.floor(Math.random() * (max - min + 1)) + min
@@ -8,8 +8,8 @@ const getRandomNumber = (max, min) => {
 
 export { getRandomNumber }
 
-const getThreeCorrectAnswers = (questionOfGame, getTheGame) => {
-  const name = userName()
+const playGame = (questionOfGame, getTheGame) => {
+  const name = getUserName()
   console.log(questionOfGame)
   const correctAnswersCount = 3
   for (let i = 1; i <= correctAnswersCount; i += 1) {
@@ -30,4 +30,4 @@ const getThreeCorrectAnswers = (questionOfGame, getTheGame) => {
   console.log(`Congratulations, ${name}!`)
 }
 
-export { getThreeCorrectAnswers }
+export { playGame }

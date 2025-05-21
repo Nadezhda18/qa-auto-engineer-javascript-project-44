@@ -1,4 +1,4 @@
-import { getThreeCorrectAnswers } from '../src/index.js'
+import { playGame } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const getRandomSign = (signs) => {
@@ -36,7 +36,7 @@ const getTheGame = () => {
 }
 
 const calculateExpression = () => {
-  getThreeCorrectAnswers(questionOfGame, getTheGame)
+  playGame(questionOfGame, getTheGame)
 }
 
 export { calculateExpression }

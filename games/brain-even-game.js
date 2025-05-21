@@ -1,4 +1,4 @@
-import { getThreeCorrectAnswers } from '../src/index.js'
+import { playGame } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const isEven = number => number % 2 === 0 // определение четности числа
@@ -16,7 +16,7 @@ const getTheGame = () => {
 }
 
 const findEvenNumber = () => {
-  getThreeCorrectAnswers(questionOfGame, getTheGame)
+  playGame(questionOfGame, getTheGame)
 }
 
 export { findEvenNumber }
