@@ -1,23 +1,23 @@
 import { getThreeCorrectAnswers } from '../src/index.js'
 import { getRandomNumber } from '../src/index.js'
 
-const findDividers = (number) => { // функция для поиска делителей определенного числа
-  const dividers = []
-  for (let i = 1; i <= 100; i += 1) {
+const isPrime = (number) => {
+  const squareRootOfNumber = Math.sqrt(number)
+  for (let i = 2; i <= squareRootOfNumber; i += 1) {
     if (number % i === 0) {
-      dividers.push(i)
+      return false
     }
   }
-  return dividers
+  return true
 }
 
 const questionOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no"'
 
 const getTheGame = () => {
   const number = getRandomNumber(1, 100)
-  const dividers = findDividers(number)
+  const isNumberPrime = isPrime(number)
   let correctAnswer = ''
-  if (dividers.length === 2 && dividers[0] === 1 && dividers[1] === number) {
+  if (isNumberPrime === true) {
     correctAnswer = 'yes'
   }
   else {
