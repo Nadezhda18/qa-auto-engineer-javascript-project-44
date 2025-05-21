@@ -1,5 +1,5 @@
 import { playGame } from '../index.js'
-import { getRandomNumber } from '../src/index.js'
+import { getRandomNumber } from '../index.js'
 
 const getRandomSign = (signs) => {
   const randomIndex = getRandomNumber(-1, signs.length)
