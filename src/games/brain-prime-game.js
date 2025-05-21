@@ -11,9 +11,9 @@ const isPrime = (number) => {
   return true
 }
 
-const questionOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no"'
+const questionOfChallenge = 'Answer "yes" if given number is prime. Otherwise answer "no"'
 
-const getTheGame = () => {
+const makeMathChallenge = () => {
   const number = getRandomNumber(1, 100)
   const isNumberPrime = isPrime(number)
   let correctAnswer = ''
@@ -32,7 +32,7 @@ const getTheGame = () => {
 }
 
 const findPrimeNumber = () => {
-  playGame(questionOfGame, getTheGame)
+  playGame(questionOfChallenge, makeMathChallenge)
 }
 
 export { findPrimeNumber }

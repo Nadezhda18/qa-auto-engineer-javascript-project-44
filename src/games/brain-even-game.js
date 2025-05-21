@@ -3,9 +3,9 @@ import { getRandomNumber } from '../src/index.js'
 
 const isEven = number => number % 2 === 0 // определение четности числа
 
-const questionOfGame = 'Answer "yes" if the number is even, otherwise answer "no".'
+const questionOfChallenge = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-const getTheGame = () => {
+const makeMathChallenge = () => {
   const number = getRandomNumber(0, 100)
   const question = number
   const correctAnswer = isEven(number) ? 'yes' : 'no'
@@ -16,7 +16,7 @@ const getTheGame = () => {
 }
 
 const findEvenNumber = () => {
-  playGame(questionOfGame, getTheGame)
+  playGame(questionOfChallenge, makeMathChallenge)
 }
 
 export { findEvenNumber }

@@ -7,13 +7,13 @@ const getRandomSign = (signs) => {
   return randomSign
 }
 
-const questionOfGame = 'What is the result of the expression?'
+const questionOfChallenge = 'What is the result of the expression?'
 
-const getTheGame = () => {
-  const symbols = ['+', '-', '*']
+const makeMathChallenge = () => {
+  const signs = ['+', '-', '*']
   const number1 = getRandomNumber(0, 100)
   const number2 = getRandomNumber(0, 100)
-  const symbol = getRandomSign(symbols)
+  const symbol = getRandomSign(signs)
   const question = `${number1} ${symbol} ${number2}`
   let correctAnswer
   switch (symbol) {
@@ -36,7 +36,7 @@ const getTheGame = () => {
 }
 
 const calculateExpression = () => {
-  playGame(questionOfGame, getTheGame)
+  playGame(questionOfChallenge, makeMathChallenge)
 }
 
 export { calculateExpression }
