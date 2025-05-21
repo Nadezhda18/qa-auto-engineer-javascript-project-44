@@ -1,4 +1,4 @@
-import { playGame } from '../src/index.js'
+import { playGame } from '../index.js'
 import { getRandomNumber } from '../src/index.js'
 
 const getRandomSign = (signs) => {
