@@ -1,5 +1,5 @@
-import { playGame } from '../src/index.js'
-import { getRandomNumber } from '../src/index.js'
+import { playGame } from '../index.js'
+import { getRandomNumber } from '../index.js'
 
 const getGCD = (a, b) => { // расчет наибольшего общего делителя
   const dividers = []
