@@ -21,10 +21,10 @@ Node.js v23.10.0
 1) Клонируйте репозиторий к себе на компьютер с помощью команды - git clone https://github.com/Nadezhda18/qa-auto-engineer-javascript-project-44.git в вашем терминале;
 2) Перейдите в корневую директорию проекта с помощью команды - cd qa-auto-engineer-javascript-project-44/;
 3) Установите пакет с помощью команды npm install;
-4) Проверьте работу пакета, запустив команду brain-games. Терминал должен потребовать ваше имя, получив которое, отправит в ответ приветствие. Вывод должен получиться следующим:  
-Welcome to the Brain Games!  
-May I have your name? [your name]  
-Hello, [your name]!  
+4) Проверьте работу пакета, запустив команду brain-games. Терминал должен потребовать ваше имя, получив которое, отправит в ответ приветствие. Вывод должен получиться следующим:    
+**Welcome to the Brain Games!**    
+**May I have your name? [your name]**      
+**Hello, [your name]!**  
 
 5) Увлекательных игр!
 
